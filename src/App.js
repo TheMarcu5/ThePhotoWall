@@ -18,7 +18,7 @@
  * 
  * Feed view (home)
  *    * mouse move -> set state to <Search>
- * Search view
+ * Search view this should probably be an overaly not a view
  *    * searchbar 
  *    * submit -> set state to <Result>
  * Result view
@@ -28,7 +28,7 @@
 import './App.css';
 import { photoFeed } from './photo_feed';
 import { Feed }  from './views/Feed'
-import { ImageComponent } from './components/ImageComponent'
+
 
 
 
@@ -39,7 +39,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <h1>{photoFeed.items[0].title}</h1>
         <Feed/>
-        <ImageComponent/>
+     
       </header>
     </div>
   );
