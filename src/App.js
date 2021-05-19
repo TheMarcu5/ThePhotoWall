@@ -26,23 +26,29 @@
  */
 
 import './App.css';
-import { photoFeed } from './photo_feed';
 import { Feed }  from './views/Feed'
 
 
 
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1>{photoFeed.items[0].title}</h1>
-        <Feed/>
+
+        
+        <h1 style={{paddingLeft:"5%", color:"a35709",fontFamily: "Playfair Display"}}>This is my thing</h1>
      
       </header>
+      <body>
+      <Feed/>
+      </body>
     </div>
   );
 }
 
 export default App;
+
+        /* <img src={logo} className="App-logo" alt="logo" /> */
+        /* <h1>{photoFeed.items[0].title}</h1> */
